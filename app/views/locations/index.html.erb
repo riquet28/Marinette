@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="text-center titre-page">Bienvenue sur l'application de Marinette</h1>
+
+<h1>Destination(s) Récente(s)</h1>
+
+<hr />
+
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Destination</th>
+      <th>Température</th>
+      <th>Ciel</th>
+      <th>Vent</th>
+      <th colspan="5"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @locations.each do |location| %>
+      <tr>
+        <td><%= location.address %></td>
+        <td><%= location.temperature %> °C</td>
+        <td><%= location.longitude %></td>
+        <td><%= location.wind %> Km/H</td>
+        <td><%= link_to 'Voir', location, class: 'btn btn-mini btn-primary' %></td>
+        <td><%= link_to 'Editer', edit_location_path(location), class: 'btn btn-mini btn-default' %></td>
+        <td><%= link_to 'Supprimer', location, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-mini btn-danger' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<h1>Saisir une nouvelle destination :</h1>
+
+<hr />
+
+<%= render 'form' %>
+
+
+
+
