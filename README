@@ -2,4 +2,9 @@ Refonte de l'application Marinette du Hackathon d'Octobre 2015 (Projet perso)
 
 Marinette doit pouvoir saisir une destination, une carte doit s'afficher ainsi que la météo.
 
+Bonus
+********
+Afficher la tenue et l'activé à faire selon la météo.
+Afficher les icones météo
+
 Application effectuée sous Rails.
