@@ -4,7 +4,18 @@ Marinette doit pouvoir saisir une destination, une carte doit s'afficher ainsi q
 
 Bonus
 ********
-Afficher la tenue et l'activé à faire selon la météo.
-Afficher les icones météo
+-Afficher la tenue et l'activé à faire selon la météo.
+-Afficher les icones météo
+-Créer un systeme de session
 
 Application effectuée sous Rails.
+
+
+
+Taches effectuées et commentaires :
+###################################
+
+26/10:
+-Refonte du panneau des destinations,
+-Mise en place des messages flash, 
+-(A voir) Comportement bizarre de Bootstrap.
