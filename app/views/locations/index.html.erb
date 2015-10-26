@@ -12,8 +12,9 @@
     <tr>
       <th>Destination</th>
       <th>Température</th>
-      <th>Ciel</th>
+      <th>Humidité</th>
       <th>Vent</th>
+      <th>Ciel</th>
       <th colspan="5"></th>
     </tr>
   </thead>
@@ -23,10 +24,10 @@
       <tr>
         <td><%= location.address %></td>
         <td><%= location.temperature %> °C</td>
-        <td><%= location.longitude %></td>
+        <td><%= location.humidite %></td>
+        <td><%= location.wind %> Km/H</td>
         <td><%= location.wind %> Km/H</td>
         <td><%= link_to 'Voir', location, class: 'btn btn-mini btn-primary' %></td>
-        <td><%= link_to 'Editer', edit_location_path(location), class: 'btn btn-mini btn-default' %></td>
         <td><%= link_to 'Supprimer', location, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-mini btn-danger' %></td>
       </tr>
     <% end %>

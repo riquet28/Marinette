@@ -12,9 +12,9 @@ class Location < ActiveRecord::Base
 		json.currently.temperature.to_i
 	end
 
-	def ciel
+	def humidite
 		json = ForecastIO.forecast(self.latitude, self.longitude)
-		json.currently.summary
+		json.currently.humidity
 	end
 
 end
