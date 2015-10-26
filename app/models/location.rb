@@ -17,4 +17,8 @@ class Location < ActiveRecord::Base
 		json.currently.humidity
 	end
 
+	def quelle_tenue
+		
+	end
+
 end
