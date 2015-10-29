@@ -33,6 +33,8 @@ gem 'forecast_io'
 gem 'pry'
 #GoogleMap4Rails
 gem 'gmaps4rails'
+#Font-Awesome
+gem "font-awesome-rails"
 
 
 # Use jquery as the JavaScript library
