@@ -15,9 +15,9 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 
 
+#Gem Perso Rajoutée
+#################################################
 
-
-#Gem rajoutée
 #Rails i18n
 gem 'i18n', '~> 0.7.0'
 #Simple Form
@@ -35,6 +35,10 @@ gem 'pry'
 gem 'gmaps4rails'
 #Font-Awesome
 gem "font-awesome-rails"
+# Bootstrap Form
+gem 'bootstrap_form'
+
+#################################################
 
 
 # Use jquery as the JavaScript library
