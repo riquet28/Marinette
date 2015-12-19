@@ -1,7 +1,12 @@
 @import "bootstrap";
 @import "font-awesome";
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
 	background-image: url(http://www.fond-ecran-hd.net/pc-driver/703.jpg);
 	background-size: cover;
 	background-attachment: fixed;
@@ -87,4 +92,8 @@ footer p {
 
 .fa {
 	padding-right: 10px;
+}
+
+.bas-page {
+  padding-bottom: 75px;
 }
