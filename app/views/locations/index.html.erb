@@ -23,9 +23,9 @@
         <td><%= location.temperature %> °C</td>
         <td><%= location.humidite %></td>
         <td><%= location.wind %> Km/H</td>
-        <td><%= location.wind %> Km/H</td>
-        <td><%= link_to "<i class='fa fa-eye'></i> Voir".html_safe, location, class: 'btn btn-mini btn-primary' %></td>
-        <td><%= link_to "<i class='fa fa-trash-o'></i> Supprimer".html_safe, location, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-mini btn-danger' %></td>
+        <td><%= location.etat_ciel %></td>
+        <td><%= link_to "<i class='fa fa-eye'></i> Voir".html_safe, location, class: 'btn btn-mini btn-primary pull-right' %></td>
+        <td><%= link_to "<i class='fa fa-trash-o'></i> Supprimer".html_safe, location, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-mini btn-danger pull-right' %></td>
       </tr>
     <% end %>
   </tbody>

@@ -17,4 +17,14 @@ class Location < ActiveRecord::Base
 		json.currently.humidity
 	end
 
+	def etat_ciel        
+  	json = ForecastIO.forecast(self.latitude, self.longitude)
+  	json.currently.summary 
+	end
+
+	def icon_meteo      
+  	json = ForecastIO.forecast(self.latitude, self.longitude)
+  	json.currently.icon 
+	end
+
 end
