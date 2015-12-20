@@ -22,6 +22,9 @@
   			<h5><i class="fa fa-sun-o"></i>Météo des 7 prochains jours</h5>
   		</div>
   		<div class="panel-body">Panel content<br>
+        <%= @location.icon_meteo %><br>
+        <%= wi_icon "+ @location.icon_meteo +", class: "pull-right", text: "Hi!" %><br>
+        Avec concatenation <%= wi_icon("day-#{@location.icon_meteo}") %>
       </div>
 		</div>
 	</div>

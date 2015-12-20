@@ -39,6 +39,8 @@ gem "font-awesome-rails"
 gem 'bootstrap_form'
 # Figaro
 gem 'figaro'
+# Icone Météo
+gem 'weather-icons-rails'
 
 #################################################
 
