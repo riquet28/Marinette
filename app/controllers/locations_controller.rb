@@ -1,5 +1,5 @@
 class LocationsController < ApplicationController
-  before_action :set_location, only: [:show, :edit, :update, :destroy]
+  before_action :set_location, only: [:show, :edit, :update, :destroy, :refresh]
 
   # GET /locations
   # GET /locations.json
@@ -15,7 +15,6 @@ class LocationsController < ApplicationController
   # GET /locations/1
   # GET /locations/1.json
   def show
-     @daily_weather = @location.meteo_semaine
   end
 
   # GET /locations/new
@@ -65,6 +64,11 @@ class LocationsController < ApplicationController
       format.html { redirect_to locations_url, notice: 'Location was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def refresh
+    @location.save
+    redirect_to root_path
   end
 
   private
