@@ -1,6 +1,7 @@
 class Location < ActiveRecord::Base
 	geocoded_by :address
 	after_validation :geocode, :if => :address_changed?
+	before_save :wind, :temperature, :humidite, :etat_ciel, :icon_meteo
 
 	def wind
 		json = ForecastIO.forecast(self.latitude, self.longitude, params: { units: 'si' })
@@ -25,11 +26,6 @@ class Location < ActiveRecord::Base
 	def icon_meteo      
   	json = ForecastIO.forecast(self.latitude, self.longitude)
   	json.currently.icon 
-	end
-
-	def meteo_semaine
-		json = ForecastIO.forecast(self.latitude, self.longitude)
-		json.daily.data.first(3)
 	end
 
 end

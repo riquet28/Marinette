@@ -26,6 +26,7 @@
         <td><%= location.etat_ciel %></td>
         <td><%= link_to "<i class='fa fa-eye'></i> Voir".html_safe, location, class: 'btn btn-mini btn-primary pull-right' %></td>
         <td><%= link_to "<i class='fa fa-trash-o'></i> Supprimer".html_safe, location, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-mini btn-danger pull-right' %></td>
+        <td><%= link_to "<i class='fa fa-refresh'></i> Rafraichir".html_safe, refresh_location_path(location), class: "btn btn-mini btn-success pull-right" %></td>
       </tr>
     <% end %>
   </tbody>
