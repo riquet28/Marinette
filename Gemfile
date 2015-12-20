@@ -18,25 +18,29 @@ gem 'coffee-rails', '~> 4.1.0'
 #Gem Perso Rajoutée
 #################################################
 
-#Rails i18n
+# Rails i18n
 gem 'i18n', '~> 0.7.0'
-#Simple Form
+# Simple Form
 gem 'simple_form', '~> 3.2'
 gem 'country_select', '~> 2.4'
-#Bootstrap Sass
+# Bootstrap Sass
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.5.1'
-#Geocoder
+# Geocoder
 gem 'geocoder'
-#Forecast
+# Forecast
 gem 'forecast_io'
-#Pry
+# Pry
 gem 'pry'
-#GoogleMap4Rails
+# GoogleMap4Rails
 gem 'gmaps4rails'
-#Font-Awesome
+# Font-Awesome
 gem "font-awesome-rails"
 # Bootstrap Form
 gem 'bootstrap_form'
+# Figaro
+gem 'figaro'
+# Icone Météo
+gem 'weather-icons-rails'
 
 #################################################
 

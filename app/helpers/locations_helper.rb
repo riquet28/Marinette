@@ -36,4 +36,38 @@ module LocationsHelper
 		end
 	end
 
+	# Affichage Icones Forecast.io
+	def quelle_icone(icon)
+		if icon.icon_meteo == "clear-day"
+			wi_icon "day-sunny"
+		elsif icon.icon_meteo == "clear-night"
+			wi_icon "night-clear"
+		elsif icon.icon_meteo == "rain"
+			wi_icon "day-rain"
+		elsif icon.icon_meteo == "snow"
+			wi_icon "day-snow"
+		elsif icon.icon_meteo == "sleet"
+			wi_icon "day-snow"
+		elsif icon.icon_meteo == "wind"
+			wi_icon "day-windy"
+		elsif icon.icon_meteo == "fog"
+			wi_icon "day-fog"
+		elsif icon.icon_meteo == "cloudy"
+			wi_icon "day-cloudy"
+		elsif icon.icon_meteo == "partly-cloudy-day"
+			wi_icon "day-cloudy"
+		elsif icon.icon_meteo == "partly-cloudy-night"
+			wi_icon "night-cloudy"
+		elsif icon.icon_meteo == "hail"
+			wi_icon "hail"
+		elsif icon.icon_meteo == "thunderstorm"
+			wi_icon "day-thunderstorm"
+		elsif icon.icon_meteo == "tornado"
+			wi_icon "tornado"
+		else
+			wi_icon "na"
+		end
+	end
+	
+
 end
