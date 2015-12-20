@@ -27,4 +27,9 @@ class Location < ActiveRecord::Base
   	json.currently.icon 
 	end
 
+	def meteo_semaine
+		json = ForecastIO.forecast(self.latitude, self.longitude)
+		json.daily.data.first(3)
+	end
+
 end

@@ -17,14 +17,20 @@
 
 <div class="row">
 	<div class="col-md-7">
-		<div class="panel panel-primary" style="height: 250px;">
+		<div class="panel panel-primary">
   		<div class="panel-heading">
   			<h5><i class="fa fa-sun-o"></i>Météo des 7 prochains jours</h5>
   		</div>
-  		<div class="panel-body">Panel content<br>
-        <%= @location.icon_meteo %><br>
-        <%= wi_icon "+ @location.icon_meteo +", class: "pull-right", text: "Hi!" %><br>
-        Avec concatenation <%= wi_icon("day-#{@location.icon_meteo}") %>
+  		<div class="panel-body">Panel content<%= quelle_icone(@location) %><br>
+        <%= @location.icon_meteo %>
+        <% @daily_weather.each do |day| %>
+        <p>
+          <b><%= Time.at(day.time).strftime('%A') %></b><br>     
+          <%= day.summary %><br>
+            High: <%= day.apparentTemperatureMax %>
+            High: <%= quelle_icone(@location) %>
+        </p>
+        <% end %>
       </div>
 		</div>
 	</div>

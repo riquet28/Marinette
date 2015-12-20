@@ -15,6 +15,7 @@ class LocationsController < ApplicationController
   # GET /locations/1
   # GET /locations/1.json
   def show
+     @daily_weather = @location.meteo_semaine
   end
 
   # GET /locations/new
