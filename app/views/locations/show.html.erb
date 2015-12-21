@@ -16,11 +16,11 @@
   		</div>
   		<div class="panel-body">
         <div class="row well">
-          <div class="col-md-5">
+          <div class="col-md-4">
             <h5>Résumé :</h5>
             <b><%= Time.now.strftime('%A') %></b><br>
             <%= @location.etat_ciel %><br>
-            Temp : <%= @location.temperature %> °C<br>
+            Temp : <%= @location_temp %> °C<br>
             Humidité : <%= @location.humidite %> %<br>
             Vent : <%= @location.wind %> Km/H
           </div>
@@ -28,11 +28,11 @@
             <h5>Icone :</h5>
             <%= quelle_icone(@location) %>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-6">
             <h5>Conseils :</h5>
-            <p><i class="fa fa-check"></i><%= quelle_tenue(@location.temperature) %><br></p>
-            <p><i class="fa fa-check"></i><%= quel_accessoire(@location.temperature) %><br></p>
-            <p><i class="fa fa-check"></i><%= quel_accessoire(@location.temperature) %></p>
+            <p><i class="fa fa-check"></i><%= quelle_tenue(@location_temp) %><br></p>
+            <p><i class="fa fa-check"></i><%= quel_accessoire(@location_temp) %><br></p>
+            <p><i class="fa fa-check"></i><%= quelle_activite(@location_temp) %></p>
           </div>
         </div>
         <%= link_to 'Retour Destinations Récentes', locations_path, class: 'btn btn-mini btn-primary block-center', style: 'width: 100%;' %>
