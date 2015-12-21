@@ -1,6 +1,6 @@
 class Location < ActiveRecord::Base
 	geocoded_by :address
-	after_validation :geocode, :if => :address_changed?
+	after_validation :geocode
 	before_save :wind, :temperature, :humidite, :etat_ciel, :icon_meteo
 
 	def wind

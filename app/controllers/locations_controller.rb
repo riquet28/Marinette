@@ -6,16 +6,18 @@ class LocationsController < ApplicationController
   def index
     @locations = Location.all
     @location = Location.new
-    @hash = Gmaps4rails.build_markers(@locations) do |location, marker|
-      marker.lat location.latitude
-      marker.lng location.longitude
-    end
   end
 
   # GET /locations/1
   # GET /locations/1.json
   def show
     @location_temp = @location.temperature
+    @location = Location.find(params[:id])
+    @hash = Gmaps4rails.build_markers(@location) do |location, marker|
+    marker.lat location.latitude
+    marker.lng location.longitude
+    marker.infowindow location.address
+    end
   end
 
   # GET /locations/new
