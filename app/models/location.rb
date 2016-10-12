@@ -1,5 +1,5 @@
 class Location < ActiveRecord::Base
-	
+
 	geocoded_by :address
 	after_validation :geocode
 	before_save :wind, :temperature, :humidite, :etat_ciel, :icon_meteo
@@ -19,14 +19,14 @@ class Location < ActiveRecord::Base
 		json.currently.humidity
 	end
 
-	def etat_ciel        
+	def etat_ciel
   	json = ForecastIO.forecast(self.latitude, self.longitude)
-  	json.currently.summary 
+  	json.currently.summary
 	end
 
-	def icon_meteo      
+	def icon_meteo
   	json = ForecastIO.forecast(self.latitude, self.longitude)
-  	json.currently.icon 
+  	json.currently.icon
 	end
 
 end

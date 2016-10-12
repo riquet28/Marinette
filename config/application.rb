@@ -1,7 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 require 'forecast_io'
-ForecastIO.api_key = '92582c0ea0a54f0986249f82e781fe47'
+ForecastIO.api_key = 'd8d0b1130e9bd0ee666880540ba446a0'
 
 
 # Require the gems listed in Gemfile, including any gems
@@ -27,5 +27,3 @@ module MarinetteProject
   end
 
 end
-
-
