@@ -1,9 +1,5 @@
 # Projet Wilder (Ruby on Rails)
 
-[![Stories in Ready](https://badge.waffle.io/riquet28/Marinnette.svg?label=ready&title=Ready)](http://waffle.io/riquet28/Marinette)
-
-[![Stories in In Progress](https://badge.waffle.io/riquet28/Marinnette.svg?label=In Progress&title=In Progress)](https://waffle.io/riquet28/Marinette)
-
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/riquet28/Marinette.svg?columns=all)](https://waffle.io/riquet28/Marinette)
 
 
