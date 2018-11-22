@@ -1,7 +1,6 @@
-# Projet Wilder (Ruby on Rails)
-
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/riquet28/Marinette.svg?columns=all)](https://waffle.io/riquet28/Marinette)
 
+# Projet Wilder (Ruby on Rails)
 
 ## Historique du Projet
 
